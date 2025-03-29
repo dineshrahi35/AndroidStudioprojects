@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/b">
+
+    <TextView
+        android:id="@+id/reminderHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Your Reminder"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Reminder Title Input -->
+    <EditText
+        android:id="@+id/reminderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Reminder Title"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <!-- Selected Date Display -->
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No date selected"
+        android:textSize="16sp"
+        android:paddingTop="8dp"/>
+
+    <!-- Date Picker Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/datePickerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pick Date"
+        app:cornerRadius="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Selected Time Display -->
+    <TextView
+        android:id="@+id/selectedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No time selected"
+        android:textSize="16sp"
+        android:paddingTop="8dp"/>
+
+    <!-- Time Picker Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/timePickerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pick Time"
+        app:cornerRadius="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Save Reminder Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveReminderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save Reminder"
+        app:cornerRadius="16dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
